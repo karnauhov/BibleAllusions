@@ -150,10 +150,8 @@ function main() {
 
 function search() {
     var result = document.querySelector("#textareaResult");
+    // TODO search here
     result.innerText = "Result";
 }
 
 main();
-
-//document.querySelector("#test").style.fontSize = "50px";
-//document.querySelector("#test").style.margin = "auto";

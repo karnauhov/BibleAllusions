@@ -4,30 +4,62 @@
   	<meta charset="UTF-8">
 	<title>Bible Allusions</title>
 	<link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-	<div class="center">
-		<label>Set an excerpt to search for allusions:</label><br><br>
-
-		<label for="selectBooks">Choose a book:</label>
-		<select id="selectBooks"></select><br>
-
-	  	<label for="inputChapters">Choose a chapter:</label>
-	  	<input id="inputChapters" type="number" value="1" step="1" min="1" max="150"><br>
-
-		<label for="inputVerses">Choose a verse:</label>
-	  	<input id="inputVerses" type="number" value="1" step="1" min="1" max="176"><br>
-
-		<label for="inputLength">Choose a length:</label>
-	  	<input id="inputLength" type="number" value="1" step="1" min="1" max="77">
-		<label for="inputLength"> verse(s)</label><br><br>
-
-		<button id="buttonSearch">Search</button><br><br>
-
-		<textarea id="textareaResult" rows="10" readonly>Search result will be here</textarea>
+	<div class="container area">
+		<div class="row align-items-center">
+			<div class="col center">
+				<label class="h5">Set an excerpt to search for allusions:</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6 right">
+				<label for="selectBooks">Choose a book:</label>
+			</div>
+			<div class="col-6 left">
+				<select id="selectBooks"></select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6 right">
+				<label for="inputChapters">Choose a chapter:</label>
+			</div>
+			<div class="col-6 left">
+				<input id="inputChapters" type="number" value="1" step="1" min="1" max="150">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6 right">
+				<label for="inputVerses">Choose a verse:</label>
+			</div>
+			<div class="col-6 left">
+				<input id="inputVerses" type="number" value="1" step="1" min="1" max="176">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6 right">
+				<label for="inputLength">Choose a length:</label>
+			</div>
+			<div class="col-6 left">
+				<input id="inputLength" type="number" value="1" step="1" min="1" max="77">
+				<label for="inputLength"> verse(s)</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 center">
+				<button class="long-button" id="buttonSearch">Search</button>
+			</div>
+		</div>
 	</div>
-
+	<div class="container area">
+		<div class="row justify-content-center">
+			<div class="col-8">
+				<textarea id="textareaResult" rows="10" readonly>Search result will be here</textarea>
+			</div>
+		</div>
+	</div>
 	<script type="text/javascript" src="./js/index.js"></script>
 </body>
 </html>
