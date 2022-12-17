@@ -3,6 +3,10 @@ body {
     overflow: hidden;
 }
 
+textarea {
+    resize: none;
+}
+
 .center {
     margin: auto;
     width: 33%;

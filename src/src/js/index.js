@@ -70,6 +70,7 @@ function main() {
     var inputChapters = document.querySelector("#inputChapters");
     var inputVerses = document.querySelector("#inputVerses");
     var inputLength = document.querySelector("#inputLength");
+    var buttonSearch = document.querySelector("#buttonSearch");
     
     // Select book
     selectBooks.onchange = function(e) {
@@ -132,6 +133,9 @@ function main() {
         }
     };
 
+    // Search button handler
+    buttonSearch.onclick = search;
+
     // Init fields
     for (const book of Books) {
         var opt = document.createElement("option");
@@ -142,6 +146,11 @@ function main() {
     selectBooks.value = Books[Books.length - 1].id;
     inputChapters.max = Books[Books.length - 1].chapters;
     inputVerses.max = Books[Books.length - 1].verses[0];
+}
+
+function search() {
+    var result = document.querySelector("#textareaResult");
+    result.innerText = "Result";
 }
 
 main();
