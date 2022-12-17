@@ -151,6 +151,8 @@ function main() {
 function search() {
     var result = document.querySelector("#textareaResult");
     // TODO search here
+    //console.log(BIBLE, DICTIONARY);
+
     result.innerText = "Result";
 }
 
