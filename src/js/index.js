@@ -149,11 +149,55 @@ function main() {
 }
 
 function search() {
+    var selectBooks = document.querySelector("#selectBooks");
+    var inputChapters = document.querySelector("#inputChapters");
+    var inputVerses = document.querySelector("#inputVerses");
+    var inputLength = document.querySelector("#inputLength");
     var result = document.querySelector("#textareaResult");
-    // TODO search here
-    //console.log(BIBLE, DICTIONARY);
 
-    result.innerText = "Result";
+    // Prepare verses for search
+    var length = Number(inputLength.value);
+    var verses = [];
+    var currentBookIndex = selectBooks.selectedIndex;
+    var currentChapterIndex = Number(inputChapters.value) - 1;
+    var currentVerseIndex = Number(inputVerses.value) - 1;
+    verses.push({ 
+        bookIndex: currentBookIndex,
+        bookId: Books[currentBookIndex].id,
+        chapter: currentChapterIndex + 1,
+        verse: currentVerseIndex + 1
+    });
+    for (var index = 1; index < length; index++) {
+        currentVerseIndex++;
+        if (Books[currentBookIndex].verses[currentChapterIndex] > currentVerseIndex) {
+            verses.push({ 
+                bookIndex: currentBookIndex,
+                bookId: Books[currentBookIndex].id,
+                chapter: currentChapterIndex + 1,
+                verse: currentVerseIndex + 1
+            });
+        } else {
+            index--;
+            currentVerseIndex = -1;
+            if (Books[currentBookIndex].chapters > currentChapterIndex + 1) {
+                currentChapterIndex++;
+            } else if (Books.length > currentBookIndex + 1){
+                currentChapterIndex = 0;
+                currentBookIndex++;
+            } else {
+                console.warn("END OF BIBLE");
+                break;
+            }
+        }
+    }
+
+    // Search allusions for each requested verse
+    for (var i = 0; i < verses.length; i++) {
+        // TODO search here for each verse
+        console.log(verses[i]);
+    }
+
+    result.innerText = "Result"
 }
 
 main();
