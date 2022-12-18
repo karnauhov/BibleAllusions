@@ -191,13 +191,22 @@ function search() {
         }
     }
 
+    result.textContent = "Allusions for ";
+    if (verses.length == 1) {
+        result.textContent += verses[0].bookId + " " + verses[0].chapter + ":" + verses[0].verse;
+    } else {
+        result.textContent += verses[0].bookId + " " + verses[0].chapter + ":" + verses[0].verse + " - " + verses[verses.length - 1].bookId + " " + verses[verses.length - 1].chapter + ":" + verses[verses.length - 1].verse;
+    }
+    result.textContent += "\n=======================\n";
+    
+
     // Search allusions for each requested verse
     for (var i = 0; i < verses.length; i++) {
         // TODO search here for each verse
         console.log(verses[i]);
     }
 
-    result.innerText = "Result"
+    
 }
 
 main();
