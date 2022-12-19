@@ -155,26 +155,26 @@ function search() {
     var inputLength = document.querySelector("#inputLength");
     var result = document.querySelector("#textareaResult");
 
-    // Prepare verses for search
+    // Prepare verse addresses for search
     var length = Number(inputLength.value);
-    var verses = [];
+    var verseAddresses = [];
     var currentBookIndex = selectBooks.selectedIndex;
     var currentChapterIndex = Number(inputChapters.value) - 1;
     var currentVerseIndex = Number(inputVerses.value) - 1;
-    verses.push({ 
+    verseAddresses.push({ 
         bookIndex: currentBookIndex,
         bookId: Books[currentBookIndex].id,
-        chapter: currentChapterIndex + 1,
-        verse: currentVerseIndex + 1
+        chapterIndex: currentChapterIndex,
+        verseIndex: currentVerseIndex
     });
     for (var index = 1; index < length; index++) {
         currentVerseIndex++;
         if (Books[currentBookIndex].verses[currentChapterIndex] > currentVerseIndex) {
-            verses.push({ 
+            verseAddresses.push({ 
                 bookIndex: currentBookIndex,
                 bookId: Books[currentBookIndex].id,
-                chapter: currentChapterIndex + 1,
-                verse: currentVerseIndex + 1
+                chapterIndex: currentChapterIndex,
+                verseIndex: currentVerseIndex
             });
         } else {
             index--;
@@ -191,22 +191,48 @@ function search() {
         }
     }
 
+    // Prepare list of words
+    var G = GREEK.words;
+    var words = [];
+    var listOfLexems = [];
+    for (var i = 0; i < verseAddresses.length; i++) {
+        var verse = getVerse(verseAddresses[i])
+        if (verse && verse.words && verse.words.length > 0) {
+            for (var j = 0; j < verse.words.length; j++) {
+                var word = G[verse.words[j]];
+                if (word && word.weight && word.lexeme && words.indexOf(verse.words[j]) == -1) {
+                    words.push(verse.words[j]);
+                    listOfLexems.push(word.lexeme);
+                }
+            }
+        }
+    }
+
+    // Prepare header before search
     result.textContent = "Allusions for ";
-    if (verses.length == 1) {
-        result.textContent += verses[0].bookId + " " + verses[0].chapter + ":" + verses[0].verse;
+    if (verseAddresses.length == 1) {
+        result.textContent += verseAddresses[0].bookId + " " + (verseAddresses[0].chapterIndex + 1) + ":" + (verseAddresses[0].verseIndex + 1);
     } else {
-        result.textContent += verses[0].bookId + " " + verses[0].chapter + ":" + verses[0].verse + " - " + verses[verses.length - 1].bookId + " " + verses[verses.length - 1].chapter + ":" + verses[verses.length - 1].verse;
+        result.textContent += verseAddresses[0].bookId + " " + (verseAddresses[0].chapterIndex + 1) + ":" + (verseAddresses[0].verseIndex + 1) + " - " + verseAddresses[verseAddresses.length - 1].bookId + " " + (verseAddresses[verseAddresses.length - 1].chapterIndex + 1) + ":" + (verseAddresses[verseAddresses.length - 1].verseIndex + 1);
     }
+    result.textContent += "\nNext unique words: " + listOfLexems.join(", ");
     result.textContent += "\n=======================\n";
-    
 
-    // Search allusions for each requested verse
-    for (var i = 0; i < verses.length; i++) {
-        // TODO search here for each verse
-        console.log(verses[i]);
+    // TODO Search here words[] in whole BIBLE and add to result
+}
+
+function getVerse(verseAddress) {
+    if (verseAddress) {
+        var book = BIBLE.books[verseAddress.bookIndex];
+        if (book) {
+            var chapter = book.chapters[verseAddress.chapterIndex];
+            if (chapter) {
+                var verse = chapter.verses[verseAddress.verseIndex];
+                return verse;
+            }
+        }
     }
-
-    
+    return undefined;
 }
 
 main();
