@@ -7447,21 +7447,21 @@ var GREEK = {
             "id": "G1063",
             "lexeme": "γάρ",
             "short_def": "ибо",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G1064",
             "lexeme": "γαστήρ",
-            "short_def": "букв",
+            "short_def": "живот",
             "weight": 1,
             "synonyms": []
         },
         {
             "id": "G1065",
             "lexeme": "γέ",
-            "short_def": "энклитическая",
-            "weight": 1,
+            "short_def": "хотя",
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -7936,7 +7936,7 @@ var GREEK = {
         {
             "id": "G1133",
             "lexeme": "γυναικάριον",
-            "short_def": "презр",
+            "short_def": "глупая женщина",
             "weight": 1,
             "synonyms": []
         },
@@ -8132,8 +8132,8 @@ var GREEK = {
         {
             "id": "G1161",
             "lexeme": "δέ",
-            "short_def": "частица",
-            "weight": 1,
+            "short_def": "же",
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -8483,7 +8483,7 @@ var GREEK = {
             "id": "G1211",
             "lexeme": "δή",
             "short_def": "теперь, итак",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -8567,7 +8567,7 @@ var GREEK = {
             "id": "G1223",
             "lexeme": "διά",
             "short_def": "через, ради",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -9470,7 +9470,7 @@ var GREEK = {
             "id": "G1352",
             "lexeme": "διό",
             "short_def": "потому",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -9491,7 +9491,7 @@ var GREEK = {
             "id": "G1355",
             "lexeme": "διόπερ",
             "short_def": "потому",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -9526,7 +9526,7 @@ var GREEK = {
             "id": "G1360",
             "lexeme": "διότι",
             "short_def": "почему",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -10058,21 +10058,21 @@ var GREEK = {
             "id": "G1436",
             "lexeme": "ἔα",
             "short_def": "о!",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G1437",
             "lexeme": "ἐάν",
             "short_def": "если только",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G1438",
             "lexeme": "ἑαυτοῦ",
-            "short_def": "возвр",
-            "weight": 1,
+            "short_def": "себя",
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -10415,28 +10415,28 @@ var GREEK = {
             "id": "G1487",
             "lexeme": "εἰ",
             "short_def": "если",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G1488",
             "lexeme": "εἶ",
             "short_def": "если",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G1489",
             "lexeme": "εἴγε",
             "short_def": "если же",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G1490",
             "lexeme": "εἰ δὲ μή(γε)",
             "short_def": "иначе",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -10499,7 +10499,7 @@ var GREEK = {
             "id": "G1499",
             "lexeme": "εἰ καί",
             "short_def": "хотя",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -10562,14 +10562,14 @@ var GREEK = {
             "id": "G1508",
             "lexeme": "εἰ μή",
             "short_def": "кроме",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G1509",
             "lexeme": "εἰ μή τι",
             "short_def": "кроме",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -10590,14 +10590,14 @@ var GREEK = {
             "id": "G1512",
             "lexeme": "εἴ περ",
             "short_def": "если только",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G1513",
             "lexeme": "εἴ πως",
             "short_def": "если возможно",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -10639,7 +10639,7 @@ var GREEK = {
             "id": "G1519",
             "lexeme": "εἰς",
             "short_def": "в, на, к",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -10688,7 +10688,7 @@ var GREEK = {
             "id": "G1526",
             "lexeme": "εἰσί",
             "short_def": "есть",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -10751,35 +10751,35 @@ var GREEK = {
             "id": "G1535",
             "lexeme": "εἴτε",
             "short_def": "если",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G1536",
             "lexeme": "εἴ τις",
             "short_def": "если кто",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G1537",
             "lexeme": "ἐκ",
             "short_def": "из",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G1538",
             "lexeme": "ἕκαστος",
             "short_def": "каждый",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G1539",
             "lexeme": "ἑκάστοτε",
             "short_def": "всякий раз",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -10947,28 +10947,28 @@ var GREEK = {
             "id": "G1563",
             "lexeme": "ἐκεῖ",
             "short_def": "там",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G1564",
             "lexeme": "ἐκεῖθεν",
             "short_def": "оттуда",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G1565",
             "lexeme": "ἐκεῖνος",
             "short_def": "тот",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G1566",
             "lexeme": "ἐκεῖσε",
             "short_def": "туда",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -11360,7 +11360,7 @@ var GREEK = {
             "id": "G1622",
             "lexeme": "ἐκτός",
             "short_def": "вне",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -11787,7 +11787,7 @@ var GREEK = {
             "id": "G1683",
             "lexeme": "ἐμαυτοῦ",
             "short_def": "себя",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -11843,7 +11843,7 @@ var GREEK = {
             "id": "G1691",
             "lexeme": "ἐμέ",
             "short_def": "меня",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -11892,21 +11892,21 @@ var GREEK = {
             "id": "G1698",
             "lexeme": "ἐμοί",
             "short_def": "мой",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G1699",
             "lexeme": "ἐμός",
             "short_def": "мой",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G1700",
             "lexeme": "ἐμοῦ",
             "short_def": "меня",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -12011,7 +12011,7 @@ var GREEK = {
             "id": "G1715",
             "lexeme": "ἔμπροσθεν",
             "short_def": "перед",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -12088,7 +12088,7 @@ var GREEK = {
             "id": "G1726",
             "lexeme": "ἐναντίον",
             "short_def": "перед",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -12263,14 +12263,14 @@ var GREEK = {
             "id": "G1751",
             "lexeme": "ἔνειμι",
             "short_def": "быть в",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G1752",
             "lexeme": "ἕνεκα",
             "short_def": "из-за",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -12319,7 +12319,7 @@ var GREEK = {
             "id": "G1759",
             "lexeme": "ἐνθάδε",
             "short_def": "здесь",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -12599,7 +12599,7 @@ var GREEK = {
             "id": "G1799",
             "lexeme": "ἐνώπιον",
             "short_def": "перед",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -12942,7 +12942,7 @@ var GREEK = {
             "id": "G1848",
             "lexeme": "ἐξουθενέω",
             "short_def": "то же",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -12962,7 +12962,7 @@ var GREEK = {
         {
             "id": "G1851",
             "lexeme": "ἐξοχή",
-            "short_def": "букв",
+            "short_def": "выступ",
             "weight": 1,
             "synonyms": []
         },
@@ -13131,7 +13131,7 @@ var GREEK = {
             "id": "G1875",
             "lexeme": "ἐπάν",
             "short_def": "когда",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -13256,22 +13256,22 @@ var GREEK = {
         {
             "id": "G1893",
             "lexeme": "ἐπεί",
-            "short_def": "с",
-            "weight": 1,
+            "short_def": "иначе",
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G1894",
             "lexeme": "ἐπειδή",
-            "short_def": "с",
-            "weight": 1,
+            "short_def": "ибо",
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G1895",
             "lexeme": "ἐπειδήπερ",
             "short_def": "так как",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -13285,7 +13285,7 @@ var GREEK = {
             "id": "G1897",
             "lexeme": "ἐπείπερ",
             "short_def": "потому что",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -13369,13 +13369,13 @@ var GREEK = {
             "id": "G1909",
             "lexeme": "ἐπί",
             "short_def": "на, по, над",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G1910",
             "lexeme": "ἐπιβαίνω",
-            "short_def": "в",
+            "short_def": "восходить",
             "weight": 1,
             "synonyms": []
         },
