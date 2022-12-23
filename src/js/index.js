@@ -65,6 +65,10 @@ var Books = [   { id: "Gen", name: "Genesis", chapters: 50, verses: [31, 25, 24,
                 { id: "Jude", name: "Jude", chapters: 1, verses: [25] },
                 { id: "Rev", name: "Revelation", chapters: 22, verses: [20, 29, 22, 11, 14, 17, 17, 13, 21, 11, 19, 17, 18, 20, 8, 21, 18, 24, 21, 15, 27, 21] }];
 
+var resultBooks = [];
+var resultChapters = [];
+var resultVerses = [];
+
 function main() {
     var selectBooks = document.querySelector("#selectBooks");
     var inputChapters = document.querySelector("#inputChapters");
@@ -201,7 +205,7 @@ function search() {
             for (var j = 0; j < verse.words.length; j++) {
                 var word = G[verse.words[j]];
                 if (word && word.weight && word.lexeme && words.indexOf(verse.words[j]) == -1) {
-                    words.push(verse.words[j]);
+                    words.push({ index: verse.words[j], word });
                     listOfLexems.push(word.lexeme);
                 }
             }
@@ -218,7 +222,42 @@ function search() {
     result.textContent += "\nNext unique words: " + listOfLexems.join(", ");
     result.textContent += "\n=======================\n";
 
-    // TODO Search here words[] in whole BIBLE and add to result
+    // Search words in Bible
+    resultBooks = [];
+    resultChapters = [];
+    resultVerses = [];
+    for (var index = 0; index < words.length; index++) {
+        searchWordInBible(words[index], verseAddresses);
+    }
+
+    // Sort results
+    resultBooks.sort(weightCompare);
+    resultChapters.sort(weightCompare);
+    resultVerses.sort(weightCompare);
+
+    // Prepare result
+    result.textContent += "BOOKS:\n";
+    for (var i = 0; i < resultBooks.length; i++) {
+        result.textContent += resultBooks[i].id + " -> weight: " + resultBooks[i].weight + "\n";
+    }
+    result.textContent += "=======================\n";
+    result.textContent += "CHAPTERS:\n";
+    for (var i = 0; i < resultChapters.length; i++) {
+        result.textContent += resultChapters[i].id + " -> weight: " + resultChapters[i].weight + "\n";
+    }
+    result.textContent += "=======================\n";
+    result.textContent += "VERSES:\n";
+    for (var i = 0; i < resultVerses.length; i++) {
+        result.textContent += resultVerses[i].id + " -> weight: " + resultVerses[i].weight + ", words: [";
+        for (var j = 0; j < resultVerses[i].words.length; j++) {
+            result.textContent += G[resultVerses[i].words[j]].lexeme + " (" + resultVerses[i].words[j] + ")";
+            if (j < resultVerses[i].words.length - 1) {
+                result.textContent += ", ";
+            }
+        }
+        result.textContent += "]\n";
+    }
+    result.textContent += "=======================\n";
 }
 
 function getVerse(verseAddress) {
@@ -234,5 +273,102 @@ function getVerse(verseAddress) {
     }
     return undefined;
 }
+
+function searchWordInBible(wordData, excludeVerses) {
+    if (!wordData){
+        return;
+    }
+    var index = wordData.index;
+    var word = wordData.word;
+
+    for (var bookIndex = 0; bookIndex < BIBLE.books.length; bookIndex++) {
+        var curBook = BIBLE.books[bookIndex];
+        for (var chapterIndex = 0; chapterIndex < curBook.chapters.length; chapterIndex++) {
+            var curChapter = curBook.chapters[chapterIndex];
+            for (var verseIndex = 0; verseIndex < curChapter.verses.length; verseIndex++) {
+                var curVerse = curChapter.verses[verseIndex];
+                for (var wordIndex = 0; wordIndex < curVerse.words.length; wordIndex++) {
+                    var curWord = curVerse.words[wordIndex];
+                    if (curWord == index) {
+                        // Check exclude addresses
+                        var exclude = false;
+                        if (excludeVerses) {
+                            for (var excIndex = 0; excIndex < excludeVerses.length; excIndex++) {
+                                var excludeVerse = excludeVerses[excIndex];
+                                if (excludeVerse.bookIndex == bookIndex && excludeVerse.chapterIndex == chapterIndex && excludeVerse.verseIndex == verseIndex) {
+                                    exclude = true
+                                    break;
+                                }
+                            }
+                        }
+
+                        if (!exclude) {
+                            // Add result to resultBooks
+                            var existBookIndex = resultBooks.findIndex(function (element) { 
+                                return element.id == BIBLE.books[bookIndex].book;
+                            });
+                            if (existBookIndex == -1) {
+                                resultBooks.push({
+                                    id: BIBLE.books[bookIndex].book,
+                                    bookIndex: bookIndex,
+                                    weight: word.weight,
+                                    words: [index]
+                                });
+                            } else {
+                                resultBooks[existBookIndex].weight += word.weight;
+                                resultBooks[existBookIndex].words.push(index);
+                            }
+
+                            // Add result to resultChapters
+                            var existChapterIndex = resultChapters.findIndex(function (element) { 
+                                return element.id == BIBLE.books[bookIndex].book + " " + (chapterIndex + 1);
+                            });
+                            if (existChapterIndex == -1) {
+                                resultChapters.push({
+                                    id: BIBLE.books[bookIndex].book + " " + (chapterIndex + 1),
+                                    bookIndex: bookIndex,
+                                    chapterIndex: chapterIndex,
+                                    weight: word.weight,
+                                    words: [index]
+                                });
+                            } else {
+                                resultChapters[existChapterIndex].weight += word.weight;
+                                resultChapters[existChapterIndex].words.push(index);
+                            }
+
+                            // Add result to resultVerses
+                            var existVerseIndex = resultVerses.findIndex(function (element) { 
+                                return element.id == BIBLE.books[bookIndex].book + " " + (chapterIndex + 1) + ":" + (verseIndex + 1);
+                            });
+                            if (existVerseIndex == -1) {
+                                resultVerses.push({
+                                    id: BIBLE.books[bookIndex].book + " " + (chapterIndex + 1) + ":" + (verseIndex + 1),
+                                    bookIndex: bookIndex,
+                                    chapterIndex: chapterIndex,
+                                    verseIndex: verseIndex,
+                                    weight: word.weight,
+                                    words: [index]
+                                });
+                            } else {
+                                resultVerses[existVerseIndex].weight += word.weight;
+                                resultVerses[existVerseIndex].words.push(index);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+function weightCompare(a, b) { 
+    if ( a.weight > b.weight ) {
+        return -1;
+    }
+    if ( a.weight < b.weight ) {
+        return 1;
+    }
+    return 0;
+ }
 
 main();

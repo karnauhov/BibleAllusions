@@ -12060,7 +12060,7 @@ var GREEK = {
             "id": "G1722",
             "lexeme": "ἐν",
             "short_def": "в, на, по",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -17730,7 +17730,7 @@ var GREEK = {
             "id": "G2532",
             "lexeme": "καί",
             "short_def": "и",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -25122,7 +25122,7 @@ var GREEK = {
             "id": "G3588",
             "lexeme": "ὁ",
             "short_def": "этот",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -26178,8 +26178,8 @@ var GREEK = {
         {
             "id": "G3739",
             "lexeme": "ὅς",
-            "short_def": "отн",
-            "weight": 1,
+            "short_def": "который",
+            "weight": 0,
             "synonyms": []
         },
         {
