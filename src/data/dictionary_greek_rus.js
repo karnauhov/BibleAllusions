@@ -14538,7 +14538,7 @@ var GREEK = {
             "id": "G2076",
             "lexeme": "ἐστί",
             "short_def": "он",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -14629,7 +14629,7 @@ var GREEK = {
             "id": "G2089",
             "lexeme": "ἔτι",
             "short_def": "еще",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -14824,7 +14824,7 @@ var GREEK = {
         {
             "id": "G2117",
             "lexeme": "εὐθύς",
-            "short_def": "прил",
+            "short_def": "прямой",
             "weight": 1,
             "synonyms": []
         },
@@ -15357,7 +15357,7 @@ var GREEK = {
             "id": "G2193",
             "lexeme": "ἕως",
             "short_def": "пока",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -15602,14 +15602,14 @@ var GREEK = {
             "id": "G2228",
             "lexeme": "ἤ",
             "short_def": "или",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G2229",
             "lexeme": "ἦ",
             "short_def": "конечно, же",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -15651,7 +15651,7 @@ var GREEK = {
             "id": "G2235",
             "lexeme": "ἤδη",
             "short_def": "уже",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -15721,7 +15721,7 @@ var GREEK = {
             "id": "G2245",
             "lexeme": "ἡλίκος",
             "short_def": "какой",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -15742,14 +15742,14 @@ var GREEK = {
             "id": "G2248",
             "lexeme": "ἡμᾶς",
             "short_def": "нас",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G2249",
             "lexeme": "ἡμεῖς",
             "short_def": "мы",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -15763,7 +15763,7 @@ var GREEK = {
             "id": "G2251",
             "lexeme": "ἡμέτερος",
             "short_def": "наш",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -15784,7 +15784,7 @@ var GREEK = {
             "id": "G2254",
             "lexeme": "ἡμῖν",
             "short_def": "нам",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -15805,7 +15805,7 @@ var GREEK = {
             "id": "G2257",
             "lexeme": "ἡμῶν",
             "short_def": "наш",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -15819,7 +15819,7 @@ var GREEK = {
             "id": "G2259",
             "lexeme": "ἡνίκα",
             "short_def": "когда",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -15917,7 +15917,7 @@ var GREEK = {
             "id": "G2273",
             "lexeme": "ἤτοι",
             "short_def": "или",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -16778,7 +16778,7 @@ var GREEK = {
             "id": "G2396",
             "lexeme": "ἴδε",
             "short_def": "вот",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -16792,7 +16792,7 @@ var GREEK = {
             "id": "G2398",
             "lexeme": "ἴδιος",
             "short_def": "свой",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -16806,7 +16806,7 @@ var GREEK = {
             "id": "G2400",
             "lexeme": "ἰδού",
             "short_def": "вот",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -17107,14 +17107,14 @@ var GREEK = {
             "id": "G2443",
             "lexeme": "ἵνα",
             "short_def": "чтобы",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G2444",
             "lexeme": "ἱνατί",
             "short_def": "зачем",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -17373,7 +17373,7 @@ var GREEK = {
             "id": "G2481",
             "lexeme": "ἴσως",
             "short_def": "может быть",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -17541,7 +17541,7 @@ var GREEK = {
             "id": "G2505",
             "lexeme": "καθά",
             "short_def": "как",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -17569,7 +17569,7 @@ var GREEK = {
             "id": "G2509",
             "lexeme": "καθάπερ",
             "short_def": "точно также как",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -17695,7 +17695,7 @@ var GREEK = {
             "id": "G2527",
             "lexeme": "καθόλου",
             "short_def": "вообще",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -17716,14 +17716,14 @@ var GREEK = {
             "id": "G2530",
             "lexeme": "καθότι",
             "short_def": "так как",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G2531",
             "lexeme": "καθώς",
             "short_def": "так как",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -17744,7 +17744,7 @@ var GREEK = {
             "id": "G2534",
             "lexeme": "καίγε",
             "short_def": "и притом",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -17779,7 +17779,7 @@ var GREEK = {
             "id": "G2539",
             "lexeme": "καίπερ",
             "short_def": "хотя",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -17807,14 +17807,14 @@ var GREEK = {
             "id": "G2543",
             "lexeme": "καίτοι",
             "short_def": "хотя",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G2544",
             "lexeme": "καίτοιγε",
             "short_def": "хотя и",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -17828,21 +17828,21 @@ var GREEK = {
             "id": "G2546",
             "lexeme": "κἀκεῖ",
             "short_def": "и там",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G2547",
             "lexeme": "κἀκεῖθεν",
             "short_def": "и оттуда",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G2548",
             "lexeme": "κἀκεῖνος",
             "short_def": "и тот",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -17995,7 +17995,7 @@ var GREEK = {
         {
             "id": "G2570",
             "lexeme": "καλός",
-            "short_def": "внеш",
+            "short_def": "красивый",
             "weight": 1,
             "synonyms": []
         },
@@ -18059,7 +18059,7 @@ var GREEK = {
             "id": "G2579",
             "lexeme": "κἄν",
             "short_def": "и если бы",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
