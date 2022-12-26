@@ -21209,7 +21209,7 @@ var GREEK = {
             "id": "G3029",
             "lexeme": "λίαν",
             "short_def": "очень",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -21299,7 +21299,7 @@ var GREEK = {
         {
             "id": "G3042",
             "lexeme": "λιμός",
-            "short_def": "глад",
+            "short_def": "голод",
             "weight": 1,
             "synonyms": []
         },
@@ -21447,14 +21447,14 @@ var GREEK = {
             "id": "G3063",
             "lexeme": "λοιπόν",
             "short_def": "наконец",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3064",
             "lexeme": "λοιποῦ",
             "short_def": "впредь",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -22203,7 +22203,7 @@ var GREEK = {
             "id": "G3171",
             "lexeme": "μεγάλως",
             "short_def": "весьма",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -23127,21 +23127,21 @@ var GREEK = {
             "id": "G3303",
             "lexeme": "μέν",
             "short_def": "конечно, же",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3304",
             "lexeme": "μενοῦνγε",
             "short_def": "но",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3305",
             "lexeme": "μέντοι",
             "short_def": "однако ж",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -23288,7 +23288,7 @@ var GREEK = {
             "id": "G3326",
             "lexeme": "μετά",
             "short_def": "с, со, среди, между",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -23400,7 +23400,7 @@ var GREEK = {
             "id": "G3342",
             "lexeme": "μεταξύ",
             "short_def": "(по)среди",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -23526,56 +23526,56 @@ var GREEK = {
             "id": "G3360",
             "lexeme": "μέχρι",
             "short_def": "до",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3361",
             "lexeme": "μή",
             "short_def": "частица со смыслом колебания",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3362",
             "lexeme": "ἐὰν μή",
             "short_def": "если не",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3363",
             "lexeme": "ἵνα μή",
             "short_def": "чтобы не",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3364",
             "lexeme": "οὐ μή",
             "short_def": "нет не",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3365",
             "lexeme": "μηδαμῶς",
             "short_def": "никак",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3366",
             "lexeme": "μηδέ",
             "short_def": "и не",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3367",
             "lexeme": "μηδείς",
             "short_def": "ни один",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -23589,7 +23589,7 @@ var GREEK = {
             "id": "G3369",
             "lexeme": "μηδέπω",
             "short_def": "еще не",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -23603,7 +23603,7 @@ var GREEK = {
             "id": "G3371",
             "lexeme": "μηκέτι",
             "short_def": "впредь не",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -23631,7 +23631,7 @@ var GREEK = {
             "id": "G3375",
             "lexeme": "μήν",
             "short_def": "ведь",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -23652,28 +23652,28 @@ var GREEK = {
             "id": "G3378",
             "lexeme": "μὴ οὐκ",
             "short_def": "неужели не",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3379",
             "lexeme": "μήποτε",
             "short_def": "дабы не",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3380",
             "lexeme": "μήπω",
             "short_def": "еще не",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3381",
             "lexeme": "μήπως",
             "short_def": "чтобы не",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -23687,7 +23687,7 @@ var GREEK = {
             "id": "G3383",
             "lexeme": "μήτε",
             "short_def": "и не",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -23701,21 +23701,21 @@ var GREEK = {
             "id": "G3385",
             "lexeme": "μήτι",
             "short_def": "чтобы что-либо не",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3386",
             "lexeme": "μήτιγε",
             "short_def": "ни тем ли более",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3387",
             "lexeme": "μήτις",
             "short_def": "чтобы что-либо не",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -23995,7 +23995,7 @@ var GREEK = {
             "id": "G3427",
             "lexeme": "μοί",
             "short_def": "мне",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -24086,7 +24086,7 @@ var GREEK = {
             "id": "G3440",
             "lexeme": "μόνον",
             "short_def": "только",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -24156,7 +24156,7 @@ var GREEK = {
             "id": "G3450",
             "lexeme": "μοῦ",
             "short_def": "мой",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -24246,7 +24246,7 @@ var GREEK = {
         {
             "id": "G3463",
             "lexeme": "μύριοι",
-            "short_def": "числит",
+            "short_def": "тысячи",
             "weight": 1,
             "synonyms": []
         },
@@ -24387,7 +24387,7 @@ var GREEK = {
             "id": "G3483",
             "lexeme": "ναί",
             "short_def": "утвердительная частица: да",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
