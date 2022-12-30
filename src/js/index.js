@@ -219,8 +219,14 @@ function search() {
     } else {
         result.textContent += verseAddresses[0].bookId + " " + (verseAddresses[0].chapterIndex + 1) + ":" + (verseAddresses[0].verseIndex + 1) + " - " + verseAddresses[verseAddresses.length - 1].bookId + " " + (verseAddresses[verseAddresses.length - 1].chapterIndex + 1) + ":" + (verseAddresses[verseAddresses.length - 1].verseIndex + 1);
     }
-    result.textContent += "\nNext unique words: " + listOfLexems.join(", ");
-    result.textContent += "\n=======================\n";
+    result.textContent += "\nNext unique words: [";
+    for (var j = 0; j < words.length; j++) {
+        result.textContent += G[words[j].index].lexeme + " (" + words[j].index + ")";
+        if (j < words.length - 1) {
+            result.textContent += ", ";
+        }
+    }
+    result.textContent += "]\n=======================\n";
 
     // Search words in Bible
     resultBooks = [];
@@ -236,26 +242,42 @@ function search() {
     resultVerses.sort(weightCompare);
 
     // Prepare result
-    result.textContent += "BOOKS:\n";
+    var minBookCount = Math.min(10, Math.ceil(words.length / 2));
+    result.textContent += "BOOKS (more than " + minBookCount + " words):\n";
     for (var i = 0; i < resultBooks.length; i++) {
-        result.textContent += resultBooks[i].id + " -> weight: " + resultBooks[i].weight + "\n";
-    }
-    result.textContent += "=======================\n";
-    result.textContent += "CHAPTERS:\n";
-    for (var i = 0; i < resultChapters.length; i++) {
-        result.textContent += resultChapters[i].id + " -> weight: " + resultChapters[i].weight + "\n";
-    }
-    result.textContent += "=======================\n";
-    result.textContent += "VERSES:\n";
-    for (var i = 0; i < resultVerses.length; i++) {
-        result.textContent += resultVerses[i].id + " -> weight: " + resultVerses[i].weight + ", words: [";
-        for (var j = 0; j < resultVerses[i].words.length; j++) {
-            result.textContent += G[resultVerses[i].words[j]].lexeme + " (" + resultVerses[i].words[j] + ")";
-            if (j < resultVerses[i].words.length - 1) {
-                result.textContent += ", ";
-            }
+        if (resultBooks[i].weight > minBookCount) {
+            result.textContent += resultBooks[i].id + " -> weight: " + resultBooks[i].weight + "\n";
         }
-        result.textContent += "]\n";
+    }
+    var minChapterCount = 3;
+    result.textContent += "=======================\n";
+    result.textContent += "CHAPTERS (more than " + minChapterCount + " words):\n";
+    for (var i = 0; i < resultChapters.length; i++) {
+        if (resultChapters[i].weight > minChapterCount) {
+            result.textContent += resultChapters[i].id + " -> weight: " + resultChapters[i].weight + ", words: [";
+            for (var j = 0; j < resultChapters[i].words.length; j++) {
+                result.textContent += G[resultChapters[i].words[j]].lexeme + " (" + resultChapters[i].words[j] + ")";
+                if (j < resultChapters[i].words.length - 1) {
+                    result.textContent += ", ";
+                }
+            }
+            result.textContent += "]\n";
+        }
+    }
+    var minVerseCount = 1;
+    result.textContent += "=======================\n";
+    result.textContent += "VERSES (more than " + minVerseCount + " word):\n";
+    for (var i = 0; i < resultVerses.length; i++) {
+        if (resultVerses[i].weight > minVerseCount) {
+            result.textContent += resultVerses[i].id + " -> weight: " + resultVerses[i].weight + ", words: [";
+            for (var j = 0; j < resultVerses[i].words.length; j++) {
+                result.textContent += G[resultVerses[i].words[j]].lexeme + " (" + resultVerses[i].words[j] + ")";
+                if (j < resultVerses[i].words.length - 1) {
+                    result.textContent += ", ";
+                }
+            }
+            result.textContent += "]\n";
+        }
     }
     result.textContent += "=======================\n";
 }
@@ -315,8 +337,10 @@ function searchWordInBible(wordData, excludeVerses) {
                                     words: [index]
                                 });
                             } else {
-                                resultBooks[existBookIndex].weight += word.weight;
-                                resultBooks[existBookIndex].words.push(index);
+                                if (resultBooks[existBookIndex].words.findIndex(function (wordIndex) { return wordIndex == index; }) == -1 && word.weight > 0) {
+                                    resultBooks[existBookIndex].weight += word.weight;
+                                    resultBooks[existBookIndex].words.push(index);
+                                }
                             }
 
                             // Add result to resultChapters
@@ -332,8 +356,10 @@ function searchWordInBible(wordData, excludeVerses) {
                                     words: [index]
                                 });
                             } else {
-                                resultChapters[existChapterIndex].weight += word.weight;
-                                resultChapters[existChapterIndex].words.push(index);
+                                if (resultChapters[existChapterIndex].words.findIndex(function (wordIndex) { return wordIndex == index; }) == -1 && word.weight > 0) {
+                                    resultChapters[existChapterIndex].weight += word.weight;
+                                    resultChapters[existChapterIndex].words.push(index);
+                                }
                             }
 
                             // Add result to resultVerses
@@ -350,8 +376,10 @@ function searchWordInBible(wordData, excludeVerses) {
                                     words: [index]
                                 });
                             } else {
-                                resultVerses[existVerseIndex].weight += word.weight;
-                                resultVerses[existVerseIndex].words.push(index);
+                                if (resultVerses[existVerseIndex].words.findIndex(function (wordIndex) { return wordIndex == index; }) == -1 && word.weight > 0) {
+                                    resultVerses[existVerseIndex].weight += word.weight;
+                                    resultVerses[existVerseIndex].words.push(index);
+                                }
                             }
                         }
                     }
