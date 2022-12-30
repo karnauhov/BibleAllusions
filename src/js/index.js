@@ -198,7 +198,6 @@ function search() {
     // Prepare list of words
     var G = GREEK.words;
     var words = [];
-    var listOfLexems = [];
     for (var i = 0; i < verseAddresses.length; i++) {
         var verse = getVerse(verseAddresses[i])
         if (verse && verse.words && verse.words.length > 0) {
@@ -206,7 +205,6 @@ function search() {
                 var word = G[verse.words[j]];
                 if (word && word.weight && word.lexeme && words.indexOf(verse.words[j]) == -1) {
                     words.push({ index: verse.words[j], word });
-                    listOfLexems.push(word.lexeme);
                 }
             }
         }
