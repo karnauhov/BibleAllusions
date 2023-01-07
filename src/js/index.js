@@ -241,17 +241,24 @@ function search() {
 
     // Prepare result
     var minBookCount = Math.min(10, Math.ceil(words.length / 2));
+    var anyBook = false;
     result.textContent += "BOOKS (more than " + minBookCount + " words):\n";
     for (var i = 0; i < resultBooks.length; i++) {
         if (resultBooks[i].weight > minBookCount) {
+            anyBook = true;
             result.textContent += resultBooks[i].id + " -> weight: " + resultBooks[i].weight + "\n";
         }
     }
-    var minChapterCount = 3;
+    if (!anyBook) {
+        result.textContent += "NOTHING TO SHOW\n";
+    }
+    var minChapterCount = Math.min(5, Math.ceil(words.length / 3));
+    var anyChapter = false;
     result.textContent += "=======================\n";
     result.textContent += "CHAPTERS (more than " + minChapterCount + " words):\n";
     for (var i = 0; i < resultChapters.length; i++) {
         if (resultChapters[i].weight > minChapterCount) {
+            anyChapter = true;
             result.textContent += resultChapters[i].id + " -> weight: " + resultChapters[i].weight + ", words: [";
             for (var j = 0; j < resultChapters[i].words.length; j++) {
                 result.textContent += G[resultChapters[i].words[j]].lexeme + " (" + resultChapters[i].words[j] + ")";
@@ -262,9 +269,12 @@ function search() {
             result.textContent += "]\n";
         }
     }
-    var minVerseCount = 1;
+    if (!anyChapter) {
+        result.textContent += "NOTHING TO SHOW\n";
+    }
+    var minVerseCount = 2;
     result.textContent += "=======================\n";
-    result.textContent += "VERSES (more than " + minVerseCount + " word):\n";
+    result.textContent += "VERSES (more than " + minVerseCount + " words):\n";
     for (var i = 0; i < resultVerses.length; i++) {
         if (resultVerses[i].weight > minVerseCount) {
             result.textContent += resultVerses[i].id + " -> weight: " + resultVerses[i].weight + ", words: [";
