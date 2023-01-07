@@ -157,7 +157,7 @@ function search() {
     var inputChapters = document.querySelector("#inputChapters");
     var inputVerses = document.querySelector("#inputVerses");
     var inputLength = document.querySelector("#inputLength");
-    var result = document.querySelector("#textareaResult");
+    var result = document.querySelector("#result");
 
     // Prepare verse addresses for search
     var length = Number(inputLength.value);
@@ -211,20 +211,20 @@ function search() {
     }
 
     // Prepare header before search
-    result.textContent = "Allusions for ";
+    var resultText = "Allusions for ";
     if (verseAddresses.length == 1) {
-        result.textContent += verseAddresses[0].bookId + " " + (verseAddresses[0].chapterIndex + 1) + ":" + (verseAddresses[0].verseIndex + 1);
+        resultText += verseAddresses[0].bookId + " " + (verseAddresses[0].chapterIndex + 1) + ":" + (verseAddresses[0].verseIndex + 1);
     } else {
-        result.textContent += verseAddresses[0].bookId + " " + (verseAddresses[0].chapterIndex + 1) + ":" + (verseAddresses[0].verseIndex + 1) + " - " + verseAddresses[verseAddresses.length - 1].bookId + " " + (verseAddresses[verseAddresses.length - 1].chapterIndex + 1) + ":" + (verseAddresses[verseAddresses.length - 1].verseIndex + 1);
+        resultText += verseAddresses[0].bookId + " " + (verseAddresses[0].chapterIndex + 1) + ":" + (verseAddresses[0].verseIndex + 1) + " - " + verseAddresses[verseAddresses.length - 1].bookId + " " + (verseAddresses[verseAddresses.length - 1].chapterIndex + 1) + ":" + (verseAddresses[verseAddresses.length - 1].verseIndex + 1);
     }
-    result.textContent += "\nNext unique words: [";
+    resultText += "<br>Next unique " + words.length + " words: [";
     for (var j = 0; j < words.length; j++) {
-        result.textContent += G[words[j].index].lexeme + " (" + words[j].index + ")";
+        resultText += G[words[j].index].lexeme + " (" + words[j].index + ")";
         if (j < words.length - 1) {
-            result.textContent += ", ";
+            resultText += ", ";
         }
     }
-    result.textContent += "]\n=======================\n";
+    resultText += "]<br><hr>";
 
     // Search words in Bible
     resultBooks = [];
@@ -239,55 +239,66 @@ function search() {
     resultChapters.sort(weightCompare);
     resultVerses.sort(weightCompare);
 
-    // Prepare result
-    var minBookCount = Math.min(10, Math.ceil(words.length / 2));
-    var anyBook = false;
-    result.textContent += "BOOKS (more than " + minBookCount + " words):\n";
-    for (var i = 0; i < resultBooks.length; i++) {
-        if (resultBooks[i].weight > minBookCount) {
-            anyBook = true;
-            result.textContent += resultBooks[i].id + " -> weight: " + resultBooks[i].weight + "\n";
+    // Result for verses
+    var minVerseCount = 2;
+    var anyVerse = false;
+    resultText += "<center>VERSES (more than " + minVerseCount + " words):</center>";
+    for (var i = 0; i < resultVerses.length; i++) {
+        if (resultVerses[i].weight > minVerseCount) {
+            anyVerse = true;
+            resultText += "<b>" + resultVerses[i].id + "</b> -> weight: " + resultVerses[i].weight + ", words: [";
+            for (var j = 0; j < resultVerses[i].words.length; j++) {
+                resultText += G[resultVerses[i].words[j]].lexeme + " (" + resultVerses[i].words[j] + ")";
+                if (j < resultVerses[i].words.length - 1) {
+                    resultText += ", ";
+                }
+            }
+            resultText += "]<br>";
         }
     }
-    if (!anyBook) {
-        result.textContent += "NOTHING TO SHOW\n";
+    if (!anyVerse) {
+        resultText += "NOTHING TO SHOW<br>";
     }
-    var minChapterCount = Math.min(5, Math.ceil(words.length / 3));
+    resultText += "<hr>";
+
+    // Result for chapters
+    var minChapterCount = Math.ceil(words.length / 3);
     var anyChapter = false;
-    result.textContent += "=======================\n";
-    result.textContent += "CHAPTERS (more than " + minChapterCount + " words):\n";
+    resultText += "<center>CHAPTERS (more than " + minChapterCount + " words):</center>";
     for (var i = 0; i < resultChapters.length; i++) {
         if (resultChapters[i].weight > minChapterCount) {
             anyChapter = true;
-            result.textContent += resultChapters[i].id + " -> weight: " + resultChapters[i].weight + ", words: [";
+            resultText += "<b>" + resultChapters[i].id + "</b> -> weight: " + resultChapters[i].weight + ", words: [";
             for (var j = 0; j < resultChapters[i].words.length; j++) {
-                result.textContent += G[resultChapters[i].words[j]].lexeme + " (" + resultChapters[i].words[j] + ")";
+                resultText += G[resultChapters[i].words[j]].lexeme + " (" + resultChapters[i].words[j] + ")";
                 if (j < resultChapters[i].words.length - 1) {
-                    result.textContent += ", ";
+                    resultText += ", ";
                 }
             }
-            result.textContent += "]\n";
+            resultText += "]<br>";
         }
     }
     if (!anyChapter) {
-        result.textContent += "NOTHING TO SHOW\n";
+        resultText += "NOTHING TO SHOW<br>";
     }
-    var minVerseCount = 2;
-    result.textContent += "=======================\n";
-    result.textContent += "VERSES (more than " + minVerseCount + " words):\n";
-    for (var i = 0; i < resultVerses.length; i++) {
-        if (resultVerses[i].weight > minVerseCount) {
-            result.textContent += resultVerses[i].id + " -> weight: " + resultVerses[i].weight + ", words: [";
-            for (var j = 0; j < resultVerses[i].words.length; j++) {
-                result.textContent += G[resultVerses[i].words[j]].lexeme + " (" + resultVerses[i].words[j] + ")";
-                if (j < resultVerses[i].words.length - 1) {
-                    result.textContent += ", ";
-                }
-            }
-            result.textContent += "]\n";
+    resultText += "<hr>";
+
+    // Result for books
+    var minBookCount = Math.ceil(words.length / 2);
+    var anyBook = false;
+    resultText += "<center>BOOKS (more than " + minBookCount + " words):</center>";
+    for (var i = 0; i < resultBooks.length; i++) {
+        if (resultBooks[i].weight > minBookCount) {
+            anyBook = true;
+            resultText += "<b>" + resultBooks[i].id + "</b> -> weight: " + resultBooks[i].weight + "<br>";
         }
     }
-    result.textContent += "=======================\n";
+    if (!anyBook) {
+        resultText += "NOTHING TO SHOW<br>";
+    }
+    resultText += "<hr>";
+
+    result.innerHTML = resultText;
 }
 
 function getVerse(verseAddress) {

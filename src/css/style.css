@@ -3,11 +3,6 @@ body {
     overflow: hidden;
 }
 
-textarea {
-    width: 100%;
-    resize: none;
-}
-
 .long-button {
     min-width: 200px;
 }
