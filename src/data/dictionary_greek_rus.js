@@ -24540,7 +24540,7 @@ var GREEK = {
         {
             "id": "G3505",
             "lexeme": "Νέρων",
-            "short_def": "от латинского",
+            "short_def": "Нерон",
             "weight": 1,
             "synonyms": []
         },
@@ -25227,7 +25227,7 @@ var GREEK = {
             "id": "G3603",
             "lexeme": "ὅ ἐστι",
             "short_def": "то есть",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -25248,7 +25248,7 @@ var GREEK = {
             "id": "G3606",
             "lexeme": "ὅθεν",
             "short_def": "откуда",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -25584,7 +25584,7 @@ var GREEK = {
             "id": "G3654",
             "lexeme": "ὅλως",
             "short_def": "в целом",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -25738,7 +25738,7 @@ var GREEK = {
             "id": "G3676",
             "lexeme": "ὅμως",
             "short_def": "однако",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -25885,21 +25885,21 @@ var GREEK = {
             "id": "G3697",
             "lexeme": "ὁποῖος",
             "short_def": "какой",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3698",
             "lexeme": "ὁπότε",
             "short_def": "когда",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3699",
             "lexeme": "ὅπου",
             "short_def": "где",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -25934,7 +25934,7 @@ var GREEK = {
             "id": "G3704",
             "lexeme": "ὅπως",
             "short_def": "как",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -26221,14 +26221,14 @@ var GREEK = {
             "id": "G3745",
             "lexeme": "ὅσος",
             "short_def": "насколько или как велик",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3746",
             "lexeme": "ὅσπερ",
             "short_def": "тот самый",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -26242,7 +26242,7 @@ var GREEK = {
             "id": "G3748",
             "lexeme": "ὅστις",
             "short_def": "который бы",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -26270,49 +26270,49 @@ var GREEK = {
             "id": "G3752",
             "lexeme": "ὅταν",
             "short_def": "всякий раз когда",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3753",
             "lexeme": "ὅτε",
             "short_def": "когда",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3754",
             "lexeme": "ὅτι",
             "short_def": "что",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3755",
             "lexeme": "ὅτου",
             "short_def": "пока",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3756",
             "lexeme": "οὐ",
             "short_def": "не",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3757",
             "lexeme": "οὗ",
             "short_def": "где",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3758",
             "lexeme": "οὐά",
             "short_def": "э! ах!",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -26326,63 +26326,63 @@ var GREEK = {
             "id": "G3760",
             "lexeme": "οὐδαμῶς",
             "short_def": "никак",
-            "weight": 1,
+            "weight":0,
             "synonyms": []
         },
         {
             "id": "G3761",
             "lexeme": "οὐδέ",
             "short_def": "и не",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3762",
             "lexeme": "οὐδείς",
             "short_def": "ни один",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3763",
             "lexeme": "οὐδέποτε",
             "short_def": "никогда",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3764",
             "lexeme": "οὐδέπω",
             "short_def": "еще не",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3765",
             "lexeme": "οὐκέτι",
             "short_def": "уже не",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3766",
             "lexeme": "οὐκοῦν",
             "short_def": "итак",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3767",
             "lexeme": "οὖν",
             "short_def": "итак",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3768",
             "lexeme": "οὔπω",
             "short_def": "еще не",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -26445,28 +26445,28 @@ var GREEK = {
             "id": "G3777",
             "lexeme": "οὔτε",
             "short_def": "и не",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3778",
             "lexeme": "οὗτος",
             "short_def": "этот",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3779",
             "lexeme": "οὕτω",
             "short_def": "так",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3780",
             "lexeme": "οὐχί",
             "short_def": "не",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -26501,7 +26501,7 @@ var GREEK = {
             "id": "G3785",
             "lexeme": "ὄφελον",
             "short_def": "о",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -26612,7 +26612,7 @@ var GREEK = {
         {
             "id": "G3801",
             "lexeme": "ὁ ὢν καί ὁ ἦν καί ὁ ἐρχόμενος",
-            "short_def": "греч",
+            "short_def": "есть, был, грядет",
             "weight": 1,
             "synonyms": []
         },
