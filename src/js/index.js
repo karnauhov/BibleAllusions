@@ -296,7 +296,6 @@ function search() {
     if (!anyBook) {
         resultText += "NOTHING TO SHOW<br>";
     }
-    resultText += "<hr>";
 
     result.innerHTML = resultText;
 }
