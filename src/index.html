@@ -11,57 +11,50 @@
 </head>
 <body class="overflow-auto">
 	<div class="container area">
-		<div class="row align-items-center">
-			<div class="col center">
-				<label class="h5">Set an excerpt to search for allusions:</label>
-			</div>
-		</div>
 		<div class="row">
-			<div class="col-6 right">
-				<label for="selectBooks">Choose a book:</label>
-			</div>
-			<div class="col-6 left">
-				<select id="selectBooks"></select>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-6 right">
-				<label for="inputChapters">Choose a chapter:</label>
-			</div>
-			<div class="col-6 left">
-				<input id="inputChapters" type="number" value="1" step="1" min="1" max="150">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-6 right">
-				<label for="inputVerses">Choose a verse:</label>
-			</div>
-			<div class="col-6 left">
-				<input id="inputVerses" type="number" value="1" step="1" min="1" max="176">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-6 right">
-				<label for="inputLength">Choose a length:</label>
-			</div>
-			<div class="col-6 left">
-				<input id="inputLength" type="number" value="1" step="1" min="1" max="77">
-				<label for="inputLength"> verse(s)</label>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-12 center">
-				<button class="long-button" id="buttonSearch">Search</button>
-			</div>
-		</div>
-	</div>
-	<div class="container area">
-        <div class="row justify-content-center">
-			<div class="col-12">
+			<header class="col-12 center">
+				<label class="h4">Search for allusions:</label>
+			</header>
+			<aside class="col-md-5 p-0 inputBlock">
+				<div class="container">
+					<div class="row my-1">
+						<div class="col-12">
+							<label for="selectBooks">Book:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+							<select id="selectBooks"></select>
+						</div>
+					</div>
+					<div class="row my-1">
+						<div class="col-12">
+							<label for="inputChapters">Chapter:&nbsp;</label>
+							<input id="inputChapters" type="number" value="1" step="1" min="1" max="150">
+						</div>
+					</div>
+					<div class="row my-1">
+						<div class="col-12">
+							<label for="inputVerses">Verse:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+							<input id="inputVerses" type="number" value="1" step="1" min="1" max="176">
+						</div>
+					</div>
+					<div class="row my-1">
+						<div class="col-12">
+							<label for="inputLength">Length:&nbsp;&nbsp;&nbsp;</label>
+							<input id="inputLength" type="number" value="1" step="1" min="1" max="77">
+							<label for="inputLength"> verse(s)</label>
+						</div>
+					</div>
+					<div class="row my-1">
+						<div class="col-12">
+							<button class="long-button" id="buttonSearch">Search</button>
+						</div>
+					</div>
+				</div>
+			</aside>
+			<main class="col-md-7 px-1 resultBlock">
 				<div id="result">Search result will be here</div>
-			</div>
+			</main>
 		</div>
 	</div>
+
 	<script type="text/javascript" src="./js/index.js"></script>
 </body>
 </html>

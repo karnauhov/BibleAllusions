@@ -1,27 +1,19 @@
-body {
-    margin: 0;
-    overflow: hidden;
-}
-
 .long-button {
     min-width: 200px;
 }
 
 .area {
-    min-width: 365px;
+    min-width: 290px;
 }
 
 .center {
     text-align: center;
-    min-height: 40px;
 }
 
-.left {
-    text-align: left;
-    min-height: 40px;
+.inputBlock {
+    background-color:beige;
 }
 
-.right {
-    text-align: right;
-    min-height: 40px;
+.resultBlock {
+    background-color:honeydew;
 }
