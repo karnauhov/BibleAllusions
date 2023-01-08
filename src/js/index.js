@@ -211,13 +211,13 @@ function search() {
     }
 
     // Prepare header before search
-    var resultText = "Allusions for ";
+    var resultText = "<center><b>Allusions for ";
     if (verseAddresses.length == 1) {
         resultText += verseAddresses[0].bookId + " " + (verseAddresses[0].chapterIndex + 1) + ":" + (verseAddresses[0].verseIndex + 1);
     } else {
         resultText += verseAddresses[0].bookId + " " + (verseAddresses[0].chapterIndex + 1) + ":" + (verseAddresses[0].verseIndex + 1) + " - " + verseAddresses[verseAddresses.length - 1].bookId + " " + (verseAddresses[verseAddresses.length - 1].chapterIndex + 1) + ":" + (verseAddresses[verseAddresses.length - 1].verseIndex + 1);
     }
-    resultText += "<br>Next unique " + words.length + " words: [";
+    resultText += "</b></center>Next unique " + words.length + " words: [";
     for (var j = 0; j < words.length; j++) {
         resultText += G[words[j].index].lexeme + " (" + words[j].index + ")";
         if (j < words.length - 1) {
@@ -242,11 +242,11 @@ function search() {
     // Result for verses
     var minVerseCount = 2;
     var anyVerse = false;
-    resultText += "<center>VERSES (more than " + minVerseCount + " words):</center>";
+    resultText += "<center><b>VERSES</b> (more than " + minVerseCount + " words):</center>";
     for (var i = 0; i < resultVerses.length; i++) {
         if (resultVerses[i].weight > minVerseCount) {
             anyVerse = true;
-            resultText += "<b>" + resultVerses[i].id + "</b> -> weight: " + resultVerses[i].weight + ", words: [";
+            resultText += "<b>" + resultVerses[i].id + "</b> -> weight: <b>" + resultVerses[i].weight + "</b>, words: [";
             for (var j = 0; j < resultVerses[i].words.length; j++) {
                 resultText += G[resultVerses[i].words[j]].lexeme + " (" + resultVerses[i].words[j] + ")";
                 if (j < resultVerses[i].words.length - 1) {
@@ -264,11 +264,11 @@ function search() {
     // Result for chapters
     var minChapterCount = Math.ceil(words.length / 3);
     var anyChapter = false;
-    resultText += "<center>CHAPTERS (more than " + minChapterCount + " words):</center>";
+    resultText += "<center><b>CHAPTERS</b> (more than " + minChapterCount + " words):</center>";
     for (var i = 0; i < resultChapters.length; i++) {
         if (resultChapters[i].weight > minChapterCount) {
             anyChapter = true;
-            resultText += "<b>" + resultChapters[i].id + "</b> -> weight: " + resultChapters[i].weight + ", words: [";
+            resultText += "<b>" + resultChapters[i].id + "</b> -> weight: <b>" + resultChapters[i].weight + "</b>, words: [";
             for (var j = 0; j < resultChapters[i].words.length; j++) {
                 resultText += G[resultChapters[i].words[j]].lexeme + " (" + resultChapters[i].words[j] + ")";
                 if (j < resultChapters[i].words.length - 1) {
@@ -286,11 +286,11 @@ function search() {
     // Result for books
     var minBookCount = Math.ceil(words.length / 2);
     var anyBook = false;
-    resultText += "<center>BOOKS (more than " + minBookCount + " words):</center>";
+    resultText += "<center><b>BOOKS</b> (more than " + minBookCount + " words):</center>";
     for (var i = 0; i < resultBooks.length; i++) {
         if (resultBooks[i].weight > minBookCount) {
             anyBook = true;
-            resultText += "<b>" + resultBooks[i].id + "</b> -> weight: " + resultBooks[i].weight + "<br>";
+            resultText += "<b>" + resultBooks[i].id + "</b> -> weight: <b>" + resultBooks[i].weight + "</b><br>";
         }
     }
     if (!anyBook) {
