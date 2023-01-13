@@ -26781,7 +26781,7 @@ var GREEK = {
             "id": "G3825",
             "lexeme": "πάλιν",
             "short_def": "опять",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -26900,21 +26900,21 @@ var GREEK = {
             "id": "G3842",
             "lexeme": "πάντοτε",
             "short_def": "всегда",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3843",
             "lexeme": "πάντως",
             "short_def": "совсем",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3844",
             "lexeme": "παρά",
-            "short_def": "с : от",
-            "weight": 1,
+            "short_def": "от",
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -27285,14 +27285,14 @@ var GREEK = {
             "id": "G3897",
             "lexeme": "παραπλήσιον",
             "short_def": "равно",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G3898",
             "lexeme": "παραπλησίως",
             "short_def": "подобным образом",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -27418,7 +27418,7 @@ var GREEK = {
             "id": "G3916",
             "lexeme": "παραχρῆμα",
             "short_def": "тотчас",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -27474,7 +27474,7 @@ var GREEK = {
             "id": "G3924",
             "lexeme": "παρεκτός",
             "short_def": "кроме",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -27698,7 +27698,7 @@ var GREEK = {
             "id": "G3956",
             "lexeme": "πᾶς",
             "short_def": "всякий",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -27858,7 +27858,7 @@ var GREEK = {
         {
             "id": "G3979",
             "lexeme": "πεζῇ",
-            "short_def": "нареч",
+            "short_def": "пешком",
             "weight": 1,
             "synonyms": []
         },
