@@ -28054,8 +28054,8 @@ var GREEK = {
         {
             "id": "G4007",
             "lexeme": "περ",
-            "short_def": "энкл",
-            "weight": 1,
+            "short_def": "очень",
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -28090,7 +28090,7 @@ var GREEK = {
             "id": "G4012",
             "lexeme": "περί",
             "short_def": "о, около",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -28566,7 +28566,7 @@ var GREEK = {
             "id": "G4080",
             "lexeme": "πηλίκος",
             "short_def": "как велик",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -28832,14 +28832,14 @@ var GREEK = {
             "id": "G4118",
             "lexeme": "πλεῖστος",
             "short_def": "наибольший",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G4119",
             "lexeme": "πλείων",
             "short_def": "больше",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -28937,7 +28937,7 @@ var GREEK = {
             "id": "G4133",
             "lexeme": "πλήν",
             "short_def": "но",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -29189,7 +29189,7 @@ var GREEK = {
             "id": "G4169",
             "lexeme": "ποῖος",
             "short_def": "какой",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -29252,14 +29252,14 @@ var GREEK = {
             "id": "G4178",
             "lexeme": "πολλάκις",
             "short_def": "часто",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G4179",
             "lexeme": "πολλαπλασίων",
             "short_def": "во много раз больший",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
