@@ -29504,7 +29504,7 @@ var GREEK = {
             "id": "G4214",
             "lexeme": "πόσος",
             "short_def": "какой",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -29525,21 +29525,21 @@ var GREEK = {
             "id": "G4217",
             "lexeme": "ποταπός",
             "short_def": "какой",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G4218",
             "lexeme": "ποτέ",
             "short_def": "когда-либо",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G4219",
             "lexeme": "πότε",
             "short_def": "когда?",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -29581,14 +29581,14 @@ var GREEK = {
             "id": "G4225",
             "lexeme": "πού",
             "short_def": "где-то",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G4226",
             "lexeme": "ποῦ",
             "short_def": "где",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
