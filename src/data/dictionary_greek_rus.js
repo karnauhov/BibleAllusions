@@ -31168,9 +31168,9 @@ var GREEK = {
         },
         {
             "id": "G4452",
-            "lexeme": "#ИМЯ?",
+            "lexeme": "",
             "short_def": "еще",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -31210,16 +31210,16 @@ var GREEK = {
         },
         {
             "id": "G4458",
-            "lexeme": "#ИМЯ?",
+            "lexeme": "",
             "short_def": "как-либо",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G4459",
             "lexeme": "πῶς",
             "short_def": "как",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
