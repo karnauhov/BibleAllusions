@@ -32724,14 +32724,14 @@ var GREEK = {
             "id": "G4674",
             "lexeme": "σός",
             "short_def": "твой",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G4675",
             "lexeme": "σοῦ",
             "short_def": "твой",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -33403,7 +33403,7 @@ var GREEK = {
             "id": "G4771",
             "lexeme": "σύ",
             "short_def": "ты",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
