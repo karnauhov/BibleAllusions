@@ -34796,7 +34796,7 @@ var GREEK = {
             "id": "G4970",
             "lexeme": "σφόδρα",
             "short_def": "весьма",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
