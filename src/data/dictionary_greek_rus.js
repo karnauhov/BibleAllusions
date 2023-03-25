@@ -35167,28 +35167,28 @@ var GREEK = {
             "id": "G5023",
             "lexeme": "ταῦτα",
             "short_def": "эти",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G5024",
             "lexeme": "ταὐτά",
             "short_def": "так же",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G5025",
             "lexeme": "ταύταις",
             "short_def": "те",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G5026",
             "lexeme": "ταύτῃ",
             "short_def": "сия",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -35265,7 +35265,7 @@ var GREEK = {
             "id": "G5037",
             "lexeme": "τέ",
             "short_def": "и",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
