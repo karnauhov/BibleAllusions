@@ -35733,36 +35733,36 @@ var GREEK = {
         {
             "id": "G5104",
             "lexeme": "τοί",
-            "short_def": "энкл",
-            "weight": 1,
+            "short_def": "Эккл.част",
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G5105",
             "lexeme": "τοιγαροῦν",
             "short_def": "итак",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G5106",
             "lexeme": "τοίνυν",
             "short_def": "итак",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G5107",
             "lexeme": "τοιόσδε",
             "short_def": "вот такой",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G5108",
             "lexeme": "τοιοῦτος",
             "short_def": "такой вот",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -35832,14 +35832,14 @@ var GREEK = {
             "id": "G5118",
             "lexeme": "τοσοῦτος",
             "short_def": "столь",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G5119",
             "lexeme": "τότε",
             "short_def": "тогда",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -35867,56 +35867,56 @@ var GREEK = {
             "id": "G5123",
             "lexeme": "τουτέστι",
             "short_def": "то есть",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G5124",
             "lexeme": "τοῦτο",
             "short_def": "это",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G5125",
             "lexeme": "τούτοις",
             "short_def": "этим",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G5126",
             "lexeme": "τοῦτον",
             "short_def": "сей",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G5127",
             "lexeme": "τούτου",
             "short_def": "сего",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G5128",
             "lexeme": "τούτους",
             "short_def": "сии",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G5129",
             "lexeme": "τούτῳ",
             "short_def": "сему",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G5130",
             "lexeme": "τούτων",
             "short_def": "сих",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -36238,7 +36238,7 @@ var GREEK = {
             "id": "G5176",
             "lexeme": "τρώγω",
             "short_def": "есть",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
