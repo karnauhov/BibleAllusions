@@ -36469,14 +36469,14 @@ var GREEK = {
             "id": "G5209",
             "lexeme": "ὑμᾶς",
             "short_def": "вас",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G5210",
             "lexeme": "ὑμεῖς",
             "short_def": "вы",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -36490,14 +36490,14 @@ var GREEK = {
             "id": "G5212",
             "lexeme": "ὑμέτερος",
             "short_def": "ваш",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G5213",
             "lexeme": "ὑμῖν",
             "short_def": "вам",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -36518,7 +36518,7 @@ var GREEK = {
             "id": "G5216",
             "lexeme": "ὑμῶν",
             "short_def": "вас",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -36560,7 +36560,7 @@ var GREEK = {
             "id": "G5222",
             "lexeme": "ὑπάντησις",
             "short_def": "в, на, к",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -36602,7 +36602,7 @@ var GREEK = {
             "id": "G5228",
             "lexeme": "ὑπέρ",
             "short_def": "с : за",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -36819,7 +36819,7 @@ var GREEK = {
             "id": "G5259",
             "lexeme": "ὑπό",
             "short_def": "с : через",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -38981,7 +38981,7 @@ var GREEK = {
         {
             "id": "G5568",
             "lexeme": "ψαλμός",
-            "short_def": "псал",
+            "short_def": "псалом",
             "weight": 1,
             "synonyms": []
         },
@@ -39199,7 +39199,7 @@ var GREEK = {
             "id": "G5599",
             "lexeme": "ὦ",
             "short_def": "о!",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -39297,7 +39297,7 @@ var GREEK = {
             "id": "G5613",
             "lexeme": "ὡς",
             "short_def": "как",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -39311,14 +39311,14 @@ var GREEK = {
             "id": "G5615",
             "lexeme": "ὡσαύτως",
             "short_def": "так же",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G5616",
             "lexeme": "ὡσεί",
             "short_def": "как",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
@@ -39332,21 +39332,21 @@ var GREEK = {
             "id": "G5618",
             "lexeme": "ὥσπερ",
             "short_def": "как",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G5619",
             "lexeme": "ὡσπερεί",
             "short_def": "как",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
             "id": "G5620",
             "lexeme": "ὥστε",
             "short_def": "поэтому",
-            "weight": 1,
+            "weight": 0,
             "synonyms": []
         },
         {
